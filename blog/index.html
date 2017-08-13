@@ -50,7 +50,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   
   <!--my css-->
-  <link rel="stylesheet" href="../../assets/css/style-default.css">
+  <link rel="stylesheet" href="../assets/css/style-default.css">
   
   <script>
     $(window).on('load',function(){
@@ -60,12 +60,8 @@
 </head>
 <body>
   <nav id='topbar' class='fixed-top d-flex flex-wrap justify-content-end align-items-center' role="navigation">
-    <a class='text-lowercase mr-auto align-items-top' href="../">
-      <img alt="my logo" src="../../assets/images/header-image.png"/>
-      Nazaire Shabazz
-    </a>
-
-    <a class="hidden-md-up fa fa-bars" data-toggle="collapse" data-target="#link-nav" aria-expanded="false" aria-controls="navbar">
+    <a class='text-lowercase ml-auto align-items-top' data-toggle="collapse" data-target="#link-nav" aria-expanded="false" aria-controls="navbar">
+      <img alt="my logo" src="..//assets/images/header-image.png"/>
       <span class="sr-only">Toggle navigation</span>
     </a>
     
@@ -73,27 +69,29 @@
       <div>
         <a class='fa fa-code' href='..//#projects' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Projects"><span class="sr-only">Projects</span></a> /
         <a class='fa fa-smile-o' href='..//#about' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="About Me"><span class="sr-only">About Me</span></a> /
-        <a class='fa fa-envelope' href='..//#contact' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="nqshabazz@gmail.com"><span class="sr-only">Contact</span></a> /
-        <a class='fa fa-commenting-o' href='..//blog' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Blog"><span class="sr-only">Blog</span></a>
+        <a class='fa fa-commenting-o' href='..//blog' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Dev Blog"><span class="sr-only">Dev Blog</span></a> /
+        <a class='fa fa-envelope-o' href='..//#contact' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="nqshabazz@gmail.com"><span class="sr-only">Contact</span></a>
       </div>
       <div>
         <a class='fa fa-twitter' href="https://twitter.com/nqshabazz" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Twitter"><span class="sr-only">Twitter</span></a> /
-        <a class='fa fa-youtube-play' href="https://www.youtube.com/channel/UCgkmuJ7wzqRH_TBikEZAAxw" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="YouTube"><span class="sr-only">YouTube</span></a> /
+        <a class='fa fa-youtube-play' href="https://www.youtube.com/channel/UCwlgvHxHkWjNCsCm9byUEUg" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="YouTube"><span class="sr-only">YouTube</span></a> /
         <a class='fa fa-github-alt' href="https://github.com/nqshabazz" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Github"><span class="sr-only">Github</span></a> /
         <a class='fa fa-linkedin' href="https://www.linkedin.com/in/nqshabazz/" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="LinkedIn"><span class="sr-only">LinkedIn</span></a>
       </div>
     </nav>
   </nav>
   <main id="blog-page">
-    <section class='lg-size m-auto'>
-      <h1 class="text-white">BLOG</h1>
+    <section class='lg-size'>
+      <h1 class="default-box" id="front-page-introduction">Dev Blog</h1>
+      <hr class="default-box" id="front-page-loading-bar" />
       
-      <div class="d-flex justify-content-between flex-wrap">
-        <article><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-06-23T00:08:36-04:00' title='6/23/17 12:08:36 am'>June 23, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>      </div>
-    </section>
+      <article><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-08-13T15:08:25-04:00' title='8/13/17 03:08:25 pm'>August 13, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>    </section>
   </main>
   <footer class='fixed-bottom bg-inverse text-white text-center'>
     <p>nqshabazz@gmail.com</p><p>&copy; Nazaire Shabazz 2017</p>
   </footer>
+  <script>
+    document.body.classList.add("loaded");
+  </script>
 </body>
 </html>
