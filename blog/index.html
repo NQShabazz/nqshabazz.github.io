@@ -83,9 +83,77 @@
   <main id="blog-page">
     <section class='lg-size'>
       <h1 class="default-box" id="front-page-introduction">Dev Blog</h1>
-      <hr class="default-box" id="front-page-loading-bar" />
+      <p class="default-box ml-5">Click the tags to see more specific posts</p>
+      <p class='default-box' id='blog-tags'>
+  <a class='badge badge-default blog-tag' onclick='toggleAllTags()'>*EVERYTHING*</a>
+  <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>test</a>
+  <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>first-post</a>
+  <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>learning</a>
+</p>      <hr class="default-box" id="front-page-loading-bar" />
+      <article class='test first-post learning'><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-08-13T21:20:24-04:00' title='8/13/17 09:20:24 pm'>August 13, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>    </section>
+    <script>
+      let tags = document.getElementsByClassName("blog-tag");
+      let URLTagFound = false;
+      let allTagsEnabled = false;
       
-      <article><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-08-13T15:08:25-04:00' title='8/13/17 03:08:25 pm'>August 13, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>    </section>
+      if(window.location.hash){
+        var tCount = tags.length;
+
+        while(tCount--){
+          let t = tags[tCount];
+
+          if(t.innerText === window.location.hash.substring(1)){
+            t.click();
+            URLTagFound = true;
+            break;
+          }
+        }
+      }
+      
+      if(!URLTagFound)
+        toggleAllTags();
+      
+      function toggleAllTags(){
+        var tCount = tags.length;
+        
+        if(allTagsEnabled){
+          while(tCount--)
+            tags[tCount].classList.remove("badge-info");
+
+          tags[1].classList.add("badge-info");
+        }else{
+          while(tCount--)
+            tags[tCount].classList.add("badge-info");
+
+          tags[1].classList.remove("badge-info");
+        }
+        
+        toggleTag(tags[1]);
+        allTagsEnabled = !allTagsEnabled;
+      }
+      
+      function toggleTag(tagElement){
+        tagElement.classList.toggle("badge-info");
+        
+        let posts = document.getElementsByTagName("article");
+        var pCount = posts.length;
+                
+        while(pCount--){
+          let p = posts[pCount];
+          p.classList.add("hidden-xl-down");
+          
+          var tCount = tags.length;
+          
+          while(tCount--){
+            let t = tags[tCount];
+            if(t.classList.contains("badge-info") && p.classList.contains(t.innerText)){
+              p.classList.remove("hidden-xl-down");
+              break;
+            }
+          }
+        }
+      }
+    </script>
   </main>
   <footer class='fixed-bottom bg-inverse text-white text-center'>
     <p>nqshabazz@gmail.com</p><p>&copy; Nazaire Shabazz 2017</p>

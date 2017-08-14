@@ -84,14 +84,15 @@
     <article id='blog-post' class='md-size m-auto'>
       <h1 class="default-box" id="front-page-introduction">Default Blog Title</h1>
       <a class="text-muted">
-        by Nazaire Shabazz | <time datetime="2017-08-13T15:08:25-04:00" title="8/13/17 03:08:25 pm">8/13/17 03:08:25 pm</time>
+        by Nazaire Shabazz | <time datetime="2017-08-13T21:20:24-04:00" title="8/13/17 09:20:24 pm">8/13/17 09:20:24 pm</time>
       </a>
       <p id="post-tags">
-        <a class='badge badge-default' href='../blog/#test'>test</a><a class='badge badge-default' href='../blog/#first post'>first post</a><a class='badge badge-default' href='../blog/#learning'>learning</a>      </p>
+        <a class='badge badge-default' href='../blog/#test'>test</a><a class='badge badge-default' href='../blog/#first-post'>first-post</a><a class='badge badge-default' href='../blog/#learning'>learning</a>      </p>
       <hr class="default-box" id="front-page-loading-bar" />
       <img src="../assets/images/default-blog-title/top-image.png"/>
       <div id="content-container" class="bg-faded">
         <p>This is my very first blog.... I wonder how this will go</p>
+        <p> I can write all types of stuff here and use HTML to do it. So I can do <b>this</b>, or <code>//this</code>, and all sorts of other <a id="bloodyCoolm8">cool stuff</a></p>
         <hr/>
       </div>
       <address class="bg-faded">
@@ -119,6 +120,13 @@
 //      s.setAttribute('data-timestamp', +new Date());
 //      (d.head || d.body).appendChild(s);
 //      })();
+        
+        var hueVal = 0;
+        
+        setInterval(function(){
+          hueVal++;
+          document.getElementById('bloodyCoolm8').style.color = "hsl(" + hueVal + ", 100%, 50%)";
+        }, 20)
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </article>
