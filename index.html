@@ -67,10 +67,10 @@
     
     <nav id="link-nav" class='navbar-collapse collapse'>
       <div>
-        <a class='fa fa-code' href='/#projects' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Projects"><span class="sr-only">Projects</span></a> /
-        <a class='fa fa-smile-o' href='/#about' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="About Me"><span class="sr-only">About Me</span></a> /
-        <a class='fa fa-commenting-o' href='/blog' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Dev Blog"><span class="sr-only">Dev Blog</span></a> /
-        <a class='fa fa-envelope-o' href='/#contact' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="nqshabazz@gmail.com"><span class="sr-only">Contact</span></a>
+        <a class='fa fa-code' href='#projects' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Projects"><span class="sr-only">Projects</span></a> /
+        <a class='fa fa-smile-o' href='#about' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="About Me"><span class="sr-only">About Me</span></a> /
+        <a class='fa fa-commenting-o' href='blog' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Dev Blog"><span class="sr-only">Dev Blog</span></a> /
+        <a class='fa fa-envelope-o' href='#contact' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="nqshabazz@gmail.com"><span class="sr-only">Contact</span></a>
       </div>
       <div>
         <a class='fa fa-twitter' href="https://twitter.com/nqshabazz" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Twitter"><span class="sr-only">Twitter</span></a> /
@@ -87,12 +87,12 @@
       
       <div class="default-box" id="front-page-option-container">
         <div class="front-page-option-box-container">
-          <a class='fa fa-code fa-5x front-page-option-box box1' href='/#projects' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Projects"><span class="sr-only">Projects</span></a>
-          <a class='fa fa-smile-o fa-5x front-page-option-box box2' href='/#about' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="About Me"><span class="sr-only">About Me</span></a>
+          <a class='fa fa-code fa-5x front-page-option-box box1' href='#projects' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Projects"><span class="sr-only">Projects</span></a>
+          <a class='fa fa-smile-o fa-5x front-page-option-box box2' href='#about' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="About Me"><span class="sr-only">About Me</span></a>
         </div>
         <div class="front-page-option-box-container">
-          <a class='fa fa-commenting-o fa-5x front-page-option-box box3' href='/blog' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Dev Blog"><span class="sr-only">Dev Blog</span></a>
-          <a class='fa fa-envelope-o fa-5x front-page-option-box box4' href='/#contact' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="nqshabazz@gmail.com"><span class="sr-only">Contact</span></a>
+          <a class='fa fa-commenting-o fa-5x front-page-option-box box3' href='blog' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Dev Blog"><span class="sr-only">Dev Blog</span></a>
+          <a class='fa fa-envelope-o fa-5x front-page-option-box box4' href='#contact' data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="nqshabazz@gmail.com"><span class="sr-only">Contact</span></a>
         </div>
         <div class="front-page-option-box-container">
           <a class='fa fa-twitter fa-2x front-page-option-box box5' href="https://twitter.com/nqshabazz" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Twitter"><span class="sr-only">Twitter</span></a>
@@ -102,8 +102,46 @@
         </div>
       </div>
     </section>
+    <section id="projects" class="text-white">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" onclick="showAllProjects()">errthang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" onclick="filterProjects('game')">game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" onclick="filterProjects('art')">art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" onclick="filterProjects('music')">music</a>
+          </li>
+        </ul>
+      
+        <article class='project-link game java processing'><a href='../energy-rush/'><figure><img src='../energy-rush/thumbnail.gif'/><figcaption class='bg-faded'><h2>Energy Rush</h2><p><a class='badge badge-default blog-tag'>game</a><a class='badge badge-default blog-tag'>java</a><a class='badge badge-default blog-tag'>processing</a></p></figcaption></figure></a></article>    </section>
+    
+    <script>
+      let projectArray = document.getElementsByClassName("project-link");
+      
+      function showAllProjects(){
+        var i = projectArray.length;
+        
+        while(i--)
+          projectArray[i].classList.remove("hidden-xl-down");
+      }
+      
+      function filterProjects(projectTag){
+        var i = projectArray.length;
+        
+        while(i--)
+          if(projectArray[i].classList.contains(projectTag))
+            projectArray[i].classList.remove("hidden-xl-down");
+          else
+            projectArray[i].classList.add("hidden-xl-down");
+      }
+    </script>
   </main>
-  <footer class='fixed-bottom bg-inverse text-white text-center'>
+  <footer class='footer bg-inverse text-white text-center'>
     <p>nqshabazz@gmail.com</p><p>&copy; Nazaire Shabazz 2017</p>
   </footer>
   <script>

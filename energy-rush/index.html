@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Portfolio of Nazaire Shabazz, digital developer and artist.">
+  <meta name="description" content="snake + tron...">
   <meta name="keywords" content="Game Development, Portfolio, 3D, Programmer, Code, Software">
   <meta name="author" content="Nazaire Shabazz">
 
-  <meta property="og:title" content="Game Development Blog - Nazaire Shabazz"/>
-  <meta property="og:description" content="Portfolio of Nazaire Shabazz, digital developer and artist."/>
+  <meta property="og:title" content="Energy Rush - Nazaire Shabazz"/>
+  <meta property="og:description" content="snake + tron..."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://nqshabazz.xyz"/>
   <meta property="og:image" content="https://nqshabazz.xyz/assets/images/logo.png"/>
@@ -19,8 +19,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@nqshabazz">
   <meta name="twitter:creator" content="@nqshabazz">
-  <meta name="twitter:title" content="Game Development Blog - Nazaire Shabazz">
-  <meta name="twitter:description" content="Portfolio of Nazaire Shabazz, digital developer and artist."/>
+  <meta name="twitter:title" content="Energy Rush - Nazaire Shabazz">
+  <meta name="twitter:description" content="snake + tron..."/>
   <meta name="twitter:image" content="https://nqshabazz.xyz/assets/images/logo.png">
 
   <!-- meta links -->
@@ -29,7 +29,7 @@
   <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>
   
   <!-- title -->
-  <title>Game Development Blog - Nazaire Shabazz</title>
+  <title>Energy Rush - Nazaire Shabazz</title>
   
   <!--Bootstrap CSS content delivery network-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -80,80 +80,56 @@
       </div>
     </nav>
   </nav>
-  <main id="blog-page">
-    <section class='lg-size'>
-      <h1 class="default-box" id="front-page-introduction">Dev Blog</h1>
-      <p class="default-box ml10">Click the tags to see more specific posts</p>
-      <p class='default-box' id='blog-tags'>
-  <a class='badge badge-default blog-tag' onclick='toggleAllTags()'>*EVERYTHING*</a>
-  <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>test</a>
-  <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>first-post</a>
-  <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>learning</a>
-</p>      <hr class="default-box" id="front-page-loading-bar" />
-      <article class='test first-post learning'><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-09-05T20:21:27-04:00' title='9/05/17 08:21:27 pm'>September 5, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>    </section>
-    <script>
-      let tags = document.getElementsByClassName("blog-tag");
-      let URLTagFound = false;
-      let allTagsEnabled = false;
-      
-      if(window.location.hash){
-        var tCount = tags.length;
-
-        while(tCount--){
-          let t = tags[tCount];
-
-          if(t.innerText === window.location.hash.substring(1)){
-            t.click();
-            URLTagFound = true;
-            break;
-          }
-        }
-      }
-      
-      if(!URLTagFound)
-        toggleAllTags();
-      
-      function toggleAllTags(){
-        var tCount = tags.length;
+  <main id="post-page">
+    <article id='blog-post' class='md-size m-auto'>
+      <h1 class="default-box" id="front-page-introduction">Energy Rush</h1>
+      <a class="text-muted">
+        by Nazaire Shabazz | <time datetime="2017-09-06T10:49:05-04:00" title="9/06/17 10:49:05 am">9/06/17 10:49:05 am</time>
+      </a>
+      <p id="post-tags">
+        <a class='badge badge-default' href='../blog/#game'>game</a><a class='badge badge-default' href='../blog/#java'>java</a><a class='badge badge-default' href='../blog/#processing'>processing</a>      </p>
+      <hr class="default-box" id="front-page-loading-bar" />
+      <img src="../energy-rush/thumbnail.gif"/>
+      <div id="content-container" class="bg-faded">
+        <p>snake + tron</p>
+        <p> Made in Java Processing.</p>
+        <hr/>
+      </div>
+      <address class="bg-faded">
+        questions / suggestions? Get in touch:
+        <p>
+          <a href="https://twitter.com/nqshabazz" rel="nofollow" target="_blank" ><span class="fa fa-twitter"></span> @nqshabazz</a> |
+          <a href="mailto:nqshabazz@gmail.com">nqshabazz@gmail.com</a>
+        </p>
+      </address>
+      <div id="disqus_thread"></div>
+      <script>
+//
+//      /**
+//      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+//      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+//        
+//      var disqus_config = function () {
+//      this.page.url = "nqshabazz.com/energy-rush/";  // Replace PAGE_URL with your page's canonical URL variable
+//      this.page.identifier ="energy-rush"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+//      };
+//        
+//      (function() { // DON'T EDIT BELOW THIS LINE
+//      var d = document, s = d.createElement('script');
+//      s.src = 'https://nqshabazz.disqus.com/embed.js';
+//      s.setAttribute('data-timestamp', +new Date());
+//      (d.head || d.body).appendChild(s);
+//      })();
         
-        if(allTagsEnabled){
-          while(tCount--)
-            tags[tCount].classList.remove("badge-success");
-
-          tags[1].classList.add("badge-success");
-        }else{
-          while(tCount--)
-            tags[tCount].classList.add("badge-success");
-
-          tags[1].classList.remove("badge-success");
-        }
+        var hueVal = 0;
         
-        toggleTag(tags[1]);
-        allTagsEnabled = !allTagsEnabled;
-      }
-      
-      function toggleTag(tagElement){
-        tagElement.classList.toggle("badge-success");
-        
-        let posts = document.getElementsByTagName("article");
-        var pCount = posts.length;
-                
-        while(pCount--){
-          let p = posts[pCount];
-          p.classList.add("hidden-xl-down");
-          
-          var tCount = tags.length;
-          
-          while(tCount--){
-            let t = tags[tCount];
-            if(t.classList.contains("badge-success") && p.classList.contains(t.innerText)){
-              p.classList.remove("hidden-xl-down");
-              break;
-            }
-          }
-        }
-      }
-    </script>
+        setInterval(function(){
+          hueVal++;
+          document.getElementById('bloodyCoolm8').style.color = "hsl(" + hueVal + ", 100%, 50%)";
+        }, 20)
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </article>
   </main>
   <footer class='footer bg-inverse text-white text-center'>
     <p>nqshabazz@gmail.com</p><p>&copy; Nazaire Shabazz 2017</p>
