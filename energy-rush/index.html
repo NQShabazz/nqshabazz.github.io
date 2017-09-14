@@ -84,7 +84,7 @@
     <article id='blog-post' class='md-size m-auto'>
       <h1 class="default-box" id="front-page-introduction">Energy Rush</h1>
       <a class="text-muted">
-        by Nazaire Shabazz | <time datetime="2017-09-07T13:50:31-04:00" title="9/07/17 01:50:31 pm">9/07/17 01:50:31 pm</time>
+        by Nazaire Shabazz | <time datetime="2017-09-14T08:44:10-04:00" title="9/14/17 08:44:10 am">9/14/17 08:44:10 am</time>
       </a>
       <p id="post-tags">
         <a class='badge badge-default' href='../blog/#game'>game</a><a class='badge badge-default' href='../blog/#java'>java</a><a class='badge badge-default' href='../blog/#processing'>processing</a>      </p>
@@ -131,6 +131,35 @@
   </footer>
   <script>
     document.body.classList.add("loaded");
+    
+    let anchorArray = document.getElementsByTagName("a");
+    var index = anchorArray.length;
+    
+    while(index--){
+      if(anchorArray[index].href.startsWith("#")){
+        console.log("ddd");
+        let anch = anchorArray[index];
+        
+        anch.addEventListener("click", function(event) {
+            event.preventDefault();
+          
+            smoothScroll(anch.href);
+        });
+      }
+    }
+    
+    if (location.hash) {
+      setTimeout(function() {
+        window.scrollTo(0, 0);
+        smoothScroll(location.hash)
+      }, 1);
+    }
+    
+    function smoothScroll(target){
+      let elem = document.getElementById(target.substring(1));
+      
+      //window.scroll({top: elem.clientTop, left: 0, behavior: 'smooth'});
+    }
   </script>
 </body>
 </html>
