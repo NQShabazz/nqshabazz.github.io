@@ -90,7 +90,7 @@
   <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>first-post</a>
   <a class='badge badge-default blog-tag' onclick='toggleTag(this)'>learning</a>
 </p>      <hr class="default-box" id="front-page-loading-bar" />
-      <article class='test first-post learning'><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-09-06T12:46:33-04:00' title='9/06/17 12:46:33 pm'>September 6, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>    </section>
+      <article class='test first-post learning'><a href='../default-blog-title/'><figure><img src='../assets/images/default-blog-title/top-image.png'/><figcaption class='bg-faded'><h2>Default Blog Title</h2><time datetime='2017-09-14T10:36:27-04:00' title='9/14/17 10:36:27 am'>September 14, 2017</time><p>This is my very first blog.... I wonder how this will go...</p></figcaption></figure></a></article>    </section>
     <script>
       let tags = document.getElementsByClassName("blog-tag");
       let URLTagFound = false;
@@ -160,6 +160,37 @@
   </footer>
   <script>
     document.body.classList.add("loaded");
+    
+    window.onload = function(){
+      let anchorArray = document.getElementsByTagName("a");
+      var index = anchorArray.length;
+
+      while(index--){
+        let anchorTarget = anchorArray[index].href.substring(17);
+        
+        if(anchorTarget.startsWith("#")){
+          let anch = anchorArray[index];
+          
+          anch.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            smoothScroll(anchorTarget.substring(1));
+          });
+        }
+      }
+
+      if (location.hash) {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+          smoothScroll(location.hash.substring(1))
+        }, 1);
+      }
+    };
+    function smoothScroll(target){
+      let elem = document.getElementById(target);
+      
+      $('html, body').animate({scrollTop: elem.offsetTop}, 750);
+    }
   </script>
 </body>
 </html>
