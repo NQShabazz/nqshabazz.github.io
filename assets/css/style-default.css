@@ -90,7 +90,7 @@ section div.testblock{width: 256px; height: 256px; background: #666;}
 
 #aboutcontact object{max-height: 80vh;}
 .blog-tag, .project-filter{cursor:pointer;}
-.project-filter:hover{color: #fff;}
+
 @media (max-width: 800px){
   body{padding: 0;}
   h1, footer{padding-left: 5%;}
