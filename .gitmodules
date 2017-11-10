@@ -1,0 +1,3 @@
+[submodule "projects/sdioretsa"]
+	path = projects/sdioretsa
+	url = https://github.com/NQShabazz/sdioretsa
