@@ -1,0 +1,6 @@
+[submodule "drawing-web-app"]
+	path = drawing-web-app
+	url = https://github.com/nqshabazz/drawing-web-app
+[submodule "sdioretsa"]
+	path = sdioretsa
+	url = https://github.com/nqshabazz/sdioretsa
