@@ -1,3 +1,6 @@
 [submodule "projects/sdioretsa"]
 	path = projects/sdioretsa
 	url = https://github.com/NQShabazz/sdioretsa
+[submodule "projects/drawing-web-app"]
+	path = projects/drawing-web-app
+	url = git://github.com/nqshabazz/drawing-web-app
