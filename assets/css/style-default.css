@@ -38,8 +38,6 @@ body.loaded #front-page-loading-bar{max-width: 800px;}
 
 #toTopButton{position: fixed; right: calc(50% - 385px); bottom: 5%;}
 
-hr{padding-top: 10px;}
-
 #front-page-option-container{height: 100px; width: 90%; max-width: 800px; position: relative;}
 .front-page-option-box-container{display: inline-block; vertical-align: top;}
 .front-page-option-box{width: 100px; height: 75px; display: inline-block; margin: 0 5px; opacity: 0; text-align: center; color: #fff; text-decoration: none;}
