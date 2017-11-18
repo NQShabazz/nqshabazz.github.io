@@ -1,9 +1,0 @@
-[submodule "drawing-web-app"]
-	path = drawing-web-app
-	url = ../../drawing-web-app
-[submodule "sdioretsa"]
-	path = sdioretsa
-	url = ../../sdioretsa
-[submodule "basic-node-chat"]
-	path = basic-node-chat
-	url = https://github.com/nqshabazz/basic-node-chat
