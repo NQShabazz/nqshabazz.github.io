@@ -6,4 +6,4 @@
 	url = ../../sdioretsa
 [submodule "basic-node-chat"]
 	path = basic-node-chat
-	url = git://github.com/nqshabazz/basic-node-chat
+	url = https://github.com/nqshabazz/basic-node-chat
