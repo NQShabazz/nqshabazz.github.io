@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <!-- meta data -->
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="For my second Arduino project, I attempted to make a cheap data glove....">
+  <meta name="keywords" content="Game Development, Portfolio, 3D, Programmer, Code, Software">
+  <meta name="author" content="Nazaire Shabazz">
+
+  <meta property="og:title" content="IGME 470 Second Project - Nazaire Shabazz"/>
+  <meta property="og:description" content="For my second Arduino project, I attempted to make a cheap data glove...."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://nqshabazz.com/igme-470-second-project"/>
+  <meta property="og:image" content="http://nqshabazz.com/../assets/images/igme-470-second-project/top-image.jpg"/>
+  <meta property="og:locale:alternate" content="es_ES"/>
+  
+  <meta property="fb:app_id" content="966242223397117"/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nqshabazz">
+  <meta name="twitter:creator" content="@nqshabazz">
+  <meta name="twitter:title" content="IGME 470 Second Project - Nazaire Shabazz">
+  <meta name="twitter:description" content="For my second Arduino project, I attempted to make a cheap data glove...."/>
+  <meta name="twitter:image" content="http://nqshabazz.com/../assets/images/igme-470-second-project/top-image.jpg">
+
+  <!-- meta links -->
+  <link rel="publisher" href="https://plus.google.com/u/0/111346714509241869686"/>
+  <link rel="canonical" href="/"/>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>
+  
+  <!-- title -->
+  <title>IGME 470 Second Project - Nazaire Shabazz</title>
+  
+  <!--Bootstrap CSS content delivery network-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+  <!--jQuery JS content delivery network-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  
+  <!--Tether JS content delivery network (for Bootstrap code highlighting)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  
+  <!--Bootstrap JS content delivery network-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+  <!--FontAwesome CSS content delivery network-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--Google Font Open Sans Font-Family-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  
+  <!--my css-->
+  <link rel="stylesheet" href="../assets/css/style-default.css">
+  
+  <script>
+    $(window).on('load',function(){
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+</head>
+<body>
+  <nav id='topbar' role="navigation">
+    <a href='../'>
+      <img alt="my logo" src="..//assets/images/header-image.png"/>
+      <span class="sr-only">To Home</span>
+    </a>
+  </nav>
+  <div id="topOfPage"></div>
+  <a class="fa fa-2x fa-chevron-up text-white" id="toTopButton" href="#topOfPage"></a>
+  <main id="post-page">
+    <article id='blog-post' class='m-auto'>
+      <h1 class="default-box" id="front-page-introduction">IGME 470 Second Project</h1>
+      <p class="text-muted">
+        by Nazaire Shabazz | <time datetime="2018-03-26T00:10:44-04:00" title="3/26/18 12:10:44 am">3/26/18 12:10:44 am</time>
+      </p>
+      <p id="post-tags">
+        <a class='badge badge-default' href='../#igme470'>igme470</a><a class='badge badge-default' href='../#arduino'>arduino</a><a class='badge badge-default' href='../#.2018'>.2018</a><a class='badge badge-default' href='../#.march'>.march</a>      </p>
+      <hr class="default-box" id="front-page-loading-bar" />
+      <img src="../assets/images/igme-470-second-project/top-image.jpg"/>
+      <div id="content-container" class="bg-faded">
+        <p>For my second Arduino project, I attempted to make a cheap data glove.</p>
+        
+        <iframe style="width: 100%; height: calc(50vw * 0.5625); min-height: 300px;" src="https://www.youtube.com/embed/smsTHg0WOo4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <p>The project didn't turn out exactly as I desired, but I was able to get the flex sensor onto a glove and (sometimes) connect the arduino to my phone via bluetooth.</p>
+        
+        <p>Also I had great help from friends at the Construct and learned a lot about wiring, sensors, and hardware in general. For example, a few of the Construct staff taught me enough to design my own flex sensor, and I drew this:</p>
+        
+        <img src="../assets/images/igme-470-second-project/sketch.jpg"
+        
+        <p>There wasn't much at all in terms of code, since the sofware was mainly for debugging purposes. The btle and NRF stuff I didn't understand at all but thanks to floe of Github for writing the libraries.</p>
+        <p>Here's what I wrote:</p>
+        
+        <a class="btn btn-primary btn-lg text-white" id="mainCodeHeading" data-toggle="collapse" data-target="#mainCode" aria-expanded="false" aria-controls="mainCode">+ main.ino</a>
+        <div id="mainCode" class="collapse" aria-labelledby="mainCodeHeading">
+          <code>
+            <pre class="card card-body">
+            
+              #include &lt;SPI.h&gt;
+              #include &lt;RF24.h&gt;
+              #include &lt;BTLE.h&gt;
+
+              RF24 radio(9,10);
+
+              BTLE btle(&radio);
+
+              void setup() {
+                // put your setup code here, to run once:
+                Serial.begin(9600);
+
+                while (!Serial) { }
+                Serial.println("BTLE advertisement sender");
+
+                btle.begin("dgbtle");
+              }
+
+              void loop() {
+                // put your main code here, to run repeatedly:
+              //  Serial.println(analogRead(3));
+              ////  delay(100);
+              //  delay(1000);                       // wait for a second
+              //  digitalWrite(8, LOW);    // turn the LED off by making the voltage LOW
+              //  delay(1000);
+                Serial.print(0);  // To freeze the lower limit
+                Serial.print(" ");
+                Serial.print(1000);  // To freeze the upper limit
+                Serial.print(" ");
+              //  Serial.print(analogRead(A5));
+              //  Serial.print(" ");
+              //  Serial.print(analogRead(A4));
+              //  Serial.print(" ");
+                Serial.println(analogRead(A3));
+
+                btle.advertise(0,0);
+                btle.hopChannel();
+                Serial.print(".");
+              }
+            </pre>
+          </code>
+        </div>
+      </div>
+            <address class="bg-faded">
+        questions / suggestions? Get in touch:
+        <p>
+          <a href="https://twitter.com/nqshabazz" rel="nofollow" target="_blank" ><span class="fa fa-twitter"></span> @nqshabazz</a> |
+          <a href="mailto:nqshabazz@gmail.com">nqshabazz@gmail.com</a>
+        </p>
+      </address>
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+        /*
+        var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() {  // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = 'https://nqshabazz.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>      <script>
+        
+      </script>
+    </article>
+  </main>
+  <footer class='footer'>
+    <p id="social-media-footer">
+      <a class='fa fa-2x fa-twitter' href="https://twitter.com/nqshabazz" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Twitter"><span class="sr-only">Twitter</span></a>
+      <a class='fa fa-2x fa-youtube-play' href="https://www.youtube.com/channel/UCwlgvHxHkWjNCsCm9byUEUg" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="YouTube"><span class="sr-only">YouTube</span></a>
+      <a class='fa fa-2x fa-github-alt' href="https://github.com/nqshabazz" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Github"><span class="sr-only">Github</span></a>
+      <a class='fa fa-2x fa-linkedin' href="https://www.linkedin.com/in/nqshabazz/" rel="nofollow" target="_blank" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="LinkedIn"><span class="sr-only">LinkedIn</span></a>
+      <a class='fa fa-2x fa-envelope' href='mailto:nqshabazz@gmail.com' data-toggle="popover" data-trigger="hover" data-placement="top" data-content="nqshabazz@gmail.com"><span class="sr-only">Email</span></a>
+    </p>
+    <p>&copy; Nazaire Shabazz 2017</p>
+  </footer>
+  <script>
+    document.body.classList.add("loaded");
+    
+    window.onload = function(){
+      let anchorArray = document.getElementsByTagName("a");
+      var index = anchorArray.length;
+
+      while(index--){
+        let anchorTarget = anchorArray[index].getAttribute("href");
+        
+        if(anchorTarget.startsWith("#")){
+          let anch = anchorArray[index];
+          
+          anch.addEventListener("click", function(event) {
+            event.preventDefault();
+            smoothScroll(anchorTarget.substring(1));
+          });
+        }
+      }
+
+      if (location.hash) {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+          smoothScroll(location.hash.substring(1))
+        }, 1);
+      }
+    };
+    
+    function smoothScroll(target){
+      let elem = document.getElementById(target);
+      
+      if(elem)
+        $('html, body').animate({scrollTop: elem.offsetTop}, 750);
+    }
+  </script>
+</body>
+</html>
