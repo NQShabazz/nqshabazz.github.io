@@ -7,4 +7,4 @@
 [submodule "basic-node-chat"]
 	path = basic-node-chat
 	url = git:../../basic-node-chat
-	branch = master
+	branch = m
