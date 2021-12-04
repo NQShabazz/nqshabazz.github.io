@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Fashion Pressure</title>
+  <style>
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url(./background.png) no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    .title-text {margin-top: 0.5em; font-size: 7.5em; opacity: 0.6;}
+    .title-text b{font-weight: bold;}
+
+    .button-container {
+      position: absolute;
+      bottom: 10vh;
+      right: 5vw;
+      width: 10px;
+      text-align: right;
+    }
+
+    .button {
+      color: white;
+      float: right;
+      text-decoration: none;
+      border-radius: 60px;
+      height: 64px;
+      display: inline-flex;
+      align-items: center;
+      padding: 5px;
+      margin: 10px 0;
+      text-align: right;
+      border: 5px solid #fff;
+      overflow: hidden;
+      width: auto;
+      max-width: 64px;
+      background-color: #fff5;
+      transition: max-width 0.5s, background-color 0.5s;
+    }
+
+    .button:hover {
+      max-width: 200px;
+      background-color: #29f;
+    }
+
+    .icon {
+      font-family: "Font Awesome 5 Free";
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .text {
+      font-size: larger;
+      font-weight: bold;
+      white-space: nowrap;
+      padding: 0 30px 0 10px;
+    }
+
+    .button img {
+      width: 64px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class=title-text>FASHION<br>PRESSURE</h1>
+  <div class=button-container>
+    <a href="#" class="button">
+      <span class="icon"><img src=./about.png /></span>
+      <span class="text">About</span>
+    </a>
+    <a href="#" class="button">
+      <span class="icon"><img src=./donate.png /></span>
+      <span class="text">Donate</span>
+    </a>
+  </div>
+  <div class=bg-image></div>
+</body>
+
+</html>
